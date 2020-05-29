@@ -196,14 +196,14 @@ def start():
     first_names = open('first_name', 'r').readlines()
     last_names = open('last_name', 'r').readlines()
     proxies = fate_proxy()
-    x = input("Do you want to use proxies?.\n"
+    a = input("Do you want to use proxies?.\n"
               "Only use proxies when your normal connection is blocked\n"
               "since proxies are very slow.\n"
               "1== Yes, 0 == NO")
 
     for x in range(200):
         try:
-            sign(first_names, last_names, proxies, x)
+            sign(first_names, last_names, proxies, a)
         except:
             print("timeout")
             continue
