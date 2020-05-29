@@ -14,14 +14,13 @@ def print_list(my_list):
 
 
 def retrieveNames(url, file_name):
-    # url = 'https://www.change.org/p/realme-mobiles-release-the-flashtool-for-realme-devices'
-
     user_agent = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:75.0) Gecko/20100101 Firefox/75.0'
     }
 
     res = requests.get(url, headers=user_agent)
-    soup = beautifulsoup(res.text, "html5lib")
+    soup = beautifulsoup(res.content, 'html5lib')
+    names = soup.find_all('div', attrs={"class": "baby-name M14_pink"})
 
     with open(file_name, 'w+', encoding='utf-8') as x:
         for line in list(soup.find_all('h3')):
@@ -44,7 +43,7 @@ def getNames():
 def sign(first_names, last_names):
     fname = random.choice(first_names).strip()
     lname = random.choice(last_names).strip()
-    email = fname + lname + '@gmail.com'
+    email = fname + lname + str(random.randint(0, 220000)) + '@gmail.com'
 
     data = {
         'firstName': fname,
@@ -53,15 +52,16 @@ def sign(first_names, last_names):
     }
 
     url = 'https://www.change.org/p/realme-mobiles-release-the-flashtool-for-realme-devices'
-    # url = 'https://www.change.org/p/change-org-developer-remove-google-captcha-from-change-org'
 
     browser = webdriver.Firefox()
     browser.get(url)
     for key in data:
         a = browser.find_element_by_name(key)
         a.send_keys(data[key])
-        a.submit()
+    a.submit()
 
+    print(fname, lname)
+    # x = input()
     browser.quit()
 
 
