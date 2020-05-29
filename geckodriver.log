@@ -842,3 +842,564 @@ JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecogn
 
 1590783906334	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileDw15O9"
 1590783913689	Marionette	INFO	Listening on port 54708
+1590784806731	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileFJzKqC"
+1590784815587	Marionette	INFO	Listening on port 55457
+1590784815671	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590784823565	Marionette	INFO	Stopped listening on port 55457
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5A000D,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 16972, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590784828800	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileBlfR1k"
+1590784836090	Marionette	INFO	Listening on port 55549
+1590784836126	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590784841378	Marionette	INFO	Stopped listening on port 55549
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590784846425	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileLhYY7f"
+1590784850043	Marionette	INFO	Listening on port 55631
+1590784850546	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590784893616	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileoC0lW8"
+1590784901843	Marionette	INFO	Listening on port 55702
+1590784901967	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590784906139	Marionette	INFO	Stopped listening on port 55702
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590784910712	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofilerbDaak"
+[Parent 836, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+1590784914447	Marionette	INFO	Listening on port 55773
+1590784914841	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590784921487	Marionette	INFO	Stopped listening on port 55773
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x590006,name=PHttpBackgroundChannel::Msg___delete__) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x590006,name=PHttpBackgroundChannel::Msg___delete__) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x140007,name=PBackgroundLSDatabase::Msg_RequestAllowToClose) Channel error: cannot send/recv
+
+[Parent 836, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590784928232	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileLU9FKM"
+1590784935646	Marionette	INFO	Listening on port 55847
+1590784936057	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590784940796	Marionette	INFO	Stopped listening on port 55847
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590784945181	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileEaBwOu"
+1590784948427	Marionette	INFO	Listening on port 55921
+1590784948803	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590784954659	Marionette	INFO	Stopped listening on port 55921
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590784959393	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileWcoGqY"
+1590784964377	Marionette	INFO	Listening on port 55994
+1590784964622	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590784969772	Marionette	INFO	Stopped listening on port 55994
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5A000D,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5A000D,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5A000D,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590784974352	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileuLJY8E"
+1590784977095	Marionette	INFO	Listening on port 56065
+1590784977491	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590784982521	Marionette	INFO	Stopped listening on port 56065
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+[2020-05-29T20:43:03Z ERROR xulstore::persist] removeDocument error: unavailable
+1590784986853	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileK5luZ9"
+1590784991017	Marionette	INFO	Listening on port 56135
+1590784991076	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590784996698	Marionette	INFO	Stopped listening on port 56135
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590785002367	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofilezy4IvC"
+1590785006094	Marionette	INFO	Listening on port 56209
+1590785006487	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590785012016	Marionette	INFO	Stopped listening on port 56209
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5A000D,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5A000D,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5A000D,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5A000D,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590785016296	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileCzTWKp"
+1590785019814	Marionette	INFO	Listening on port 56283
+1590785019916	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590785025380	Marionette	INFO	Stopped listening on port 56283
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x6A0029,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590785030635	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileImz4ps"
+1590785037496	Marionette	INFO	Listening on port 56358
+1590785037958	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590785043010	Marionette	INFO	Stopped listening on port 56358
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590785047871	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileW1pXlU"
+1590785052564	Marionette	INFO	Listening on port 56435
+1590785052617	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590785058375	Marionette	INFO	Stopped listening on port 56435
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5A000D,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5A000D,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590785062953	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileiKxKY0"
+1590785066029	Marionette	INFO	Listening on port 56512
+1590785066069	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590785070896	Marionette	INFO	Stopped listening on port 56512
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590785075377	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofilePEZ3s0"
+1590785078597	Marionette	INFO	Listening on port 56585
+1590785079014	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590785084547	Marionette	INFO	Stopped listening on port 56585
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5A000D,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590785089550	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofilec2w2Ta"
+1590785096193	Marionette	INFO	Listening on port 56654
+1590785096371	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590785160585	Marionette	INFO	Stopped listening on port 56654
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+[2020-05-29T20:46:01Z ERROR xulstore::persist] removeDocument error: unavailable
+1590785165053	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileCagMOW"
+1590785171441	Marionette	INFO	Listening on port 56748
+1590785171869	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590785175787	Marionette	INFO	Stopped listening on port 56748
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590785180237	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofile43r3c4"
+1590785183896	Marionette	INFO	Listening on port 56812
+1590785184360	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590785190847	Marionette	INFO	Stopped listening on port 56812
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+[Parent 15396, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+[Parent 15396, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x140007,name=PBackgroundLSDatabase::Msg_RequestAllowToClose) Channel error: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590785196283	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofilegzcpmC"
+1590785204078	Marionette	INFO	Listening on port 56883
+1590785204107	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590785210325	Marionette	INFO	Stopped listening on port 56883
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590785214915	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileDqFWFX"
+1590785219697	Marionette	INFO	Listening on port 56960
+1590785220162	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590785369256	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofile52RKCk"
+1590785374283	Marionette	INFO	Listening on port 57054
+1590785374473	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+1590785383633	Marionette	INFO	Stopped listening on port 57054
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+1590785383097	Marionette	INFO	Stopped listening on port 57091
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590785395461	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofilevy0nNr"
+1590785403735	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofilenMtd1N"
+1590785414781	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileQlFgah"
+1590785419689	Marionette	INFO	Listening on port 57160
+1590785420017	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590785469469	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofilenjoX3o"
+1590785478996	Marionette	INFO	Listening on port 57220
+1590785479430	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://assets-fe.change.org/fe/12cdb2e55cd2c60e8d0ecbd35d1b6b74/petitionsEntryChunk-bae80421b13804f9c2d7.js, line 109: Error: The script https://connect.facebook.net/en_GB/sdk.js didn't load correctly.
+JavaScript error: https://assets-fe.change.org/fe/12cdb2e55cd2c60e8d0ecbd35d1b6b74/petitionsEntryChunk-bae80421b13804f9c2d7.js, line 1: Error: Could not load chunk for route component: ChunkLoadError: Loading chunk 47 failed.
+(error: https://assets-fe.change.org/fe/12cdb2e55cd2c60e8d0ecbd35d1b6b74/updatesAndCommentsChunk-853f242b92a2b93108de.js)
+JavaScript error: https://assets-fe.change.org/fe/12cdb2e55cd2c60e8d0ecbd35d1b6b74/petitionsEntryChunk-bae80421b13804f9c2d7.js, line 1: Error: Could not load chunk for route component: ChunkLoadError: Loading chunk 44 failed.
+(error: https://assets-fe.change.org/fe/12cdb2e55cd2c60e8d0ecbd35d1b6b74/suggestedPetitionsChunk-a695577d586f5efb950c.js)
+JavaScript error: https://assets-fe.change.org/fe/12cdb2e55cd2c60e8d0ecbd35d1b6b74/petitionsEntryChunk-bae80421b13804f9c2d7.js, line 109: Error: The script https://apis.google.com/js/platform.js didn't load correctly.
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+1590785536369	Marionette	INFO	Stopped listening on port 57220
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590785590827	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofilefOQbpF"
+1590785597790	Marionette	INFO	Listening on port 57294
+1590785598072	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+1590785624733	Marionette	INFO	Stopped listening on port 57294
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590785627265	Marionette	INFO	Stopped listening on port 57332
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590786070797	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileRzPPlu"
+1590786079058	Marionette	INFO	Listening on port 57544
+1590786079126	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+1590786088026	Marionette	INFO	Stopped listening on port 57544
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590786114808	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileKZmKlD"
+1590786121527	Marionette	INFO	Listening on port 57628
+1590786121631	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+1590786126558	Marionette	INFO	Stopped listening on port 57628
+
+###!!! [Child][RunMessage] Error: Channel clo1590786128448	Marionette	INFO	Listening on port 57661
+1590786128863	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590786131974	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileMPSVLI"
+1590786141399	Marionette	INFO	Listening on port 57689
+1590786141904	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590786145103	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofile905ZeU"
+1590786153732	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofilezwwDSC"
+1590786157589	Marionette	INFO	Listening on port 57742
+1590786157852	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590786160963	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileSSWyQ3"
+1590786188113	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileCUrNT4"
+1590786191476	Marionette	INFO	Listening on port 57812
+1590786191730	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590786206683	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileplKTJ6"
+1590786214374	Marionette	INFO	Listening on port 57951
+1590786214517	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+JavaScript error: https://eus.rubiconproject.com/usync.html?gdpr=0&gdpr_consent=, line 12: SecurityError: The operation is insecure.
+1590786277815	Marionette	INFO	Stopped listening on port 57951
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5A000D,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5A000D,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5A000D,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+1590786211448	Marionette	INFO	Stopped listening on port 57812
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590786226229	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileDXrtNP"
+1590786230528	Marionette	INFO	Listening on port 58075
+1590786230954	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590786244531	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofilepuSgxC"
+1590786256246	Marionette	INFO	Listening on port 58208
+1590786256567	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590786270501	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofile6m64PI"
+1590786356898	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofilegR6Peh"
+1590786360415	Marionette	INFO	Listening on port 58475
+1590786360511	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590786518587	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofile1y2ZCp"
+1590786525518	Marionette	INFO	Listening on port 58632
+1590786525917	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590786525921	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"169.57.157.148:8123","httpProxy":"169.57.157.148:8123","sslProxy":"169.57.157.148:8123"}
+JavaScript error: https://whatismyipaddress.com/, line 377: ReferenceError: L is not defined
+1590786578832	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofile835I61"
+1590786586106	Marionette	INFO	Listening on port 58748
+1590786586173	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590786586177	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"169.57.157.148:8123","httpProxy":"169.57.157.148:8123","sslProxy":"169.57.157.148:8123"}
+1590786605471	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofilet55zzS"
+1590786608907	Marionette	INFO	Listening on port 58793
+1590786609088	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590786609090	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"169.57.157.148:8123","httpProxy":"169.57.157.148:8123","sslProxy":"169.57.157.148:8123"}
+1590786621436	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileaBQ1Gk"
+1590786631024	Marionette	INFO	Listening on port 58844
+1590786631648	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590786631653	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"64.227.32.213:1080","httpProxy":"64.227.32.213:1080","sslProxy":"64.227.32.213:1080"}
+1590786645665	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileI4ORdG"
+1590786650191	Marionette	INFO	Listening on port 58919
+1590786650379	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590786650382	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"169.57.157.148:8123","httpProxy":"169.57.157.148:8123","sslProxy":"169.57.157.148:8123"}
+1590786654370	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileKrsF2I"
+1590786659910	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofile4BcRwM"
+1590786663638	Marionette	INFO	Listening on port 58977
+1590786664052	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590786664055	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"189.108.173.18:3128","httpProxy":"189.108.173.18:3128","sslProxy":"189.108.173.18:3128"}
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+1590786669781	Marionette	INFO	Stopped listening on port 58977
+
+###!!! [Child][RunMessage] Error: Channel clo1590786672538	Marionette	INFO	Listening on port 59012
+1590786672821	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590786672824	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"116.27.247.238:4216","httpProxy":"116.27.247.238:4216","sslProxy":"116.27.247.238:4216"}
+1590786717643	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofilexpkDcv"
+1590786726194	Marionette	INFO	Listening on port 59057
+1590786726570	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590786726572	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"181.129.183.19:53281","httpProxy":"181.129.183.19:53281","sslProxy":"181.129.183.19:53281"}
+1590786776679	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileiEvX8D"
+1590786780424	Marionette	INFO	Listening on port 59130
+1590786780793	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590786780796	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"169.57.157.148:8123","httpProxy":"169.57.157.148:8123","sslProxy":"169.57.157.148:8123"}
+1590786793906	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marion1590786794357	Marionette	INFO	Stopped listening on port 59130
+
+###!!! [Child][RunMessage] Error: Channel clo1590786797222	Marionette	INFO	Listening on port 59173
+1590786797524	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590786797527	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"64.227.32.213:1080","httpProxy":"64.227.32.213:1080","sslProxy":"64.227.32.213:1080"}
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+[Parent 13500, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util1590786815465	Marionette	INFO	Listening on port 59303
+1590786815840	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590786815843	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"157.230.28.131:3128","httpProxy":"157.230.28.131:3128","sslProxy":"157.230.28.131:3128"}
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+1590786822998	Marionette	INFO	Stopped listening on port 59303
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590786902298	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofilebhUQYq"
+1590786905876	Marionette	INFO	Listening on port 59407
+1590786905918	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590786905921	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"169.57.157.148:8123","httpProxy":"169.57.157.148:8123","sslProxy":"169.57.157.148:8123"}
+1590786909869	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofilesNlLV8"
+1590786914086	Marionette	INFO	Listening on port 59447
+1590786914586	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590786914589	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"64.227.32.213:1080","httpProxy":"64.227.32.213:1080","sslProxy":"64.227.32.213:1080"}
+1590786927672	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileuKqnyd"
+1590787003019	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofilej2lZ2c"
+1590787006313	Marionette	INFO	Listening on port 59541
+1590787006632	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590787006635	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"169.57.157.148:8123","httpProxy":"169.57.157.148:8123","sslProxy":"169.57.157.148:8123"}
+1590787007502	Marionette	INFO	Stopped listening on port 59541
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+[2020-05-29T21:16:48Z ERROR xulstore::persist] removeDocument error: unavailable
+1590787011637	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileOJje70"
+[Parent 11848, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+1590787016349	Marionette	INFO	Listening on port 59580
+1590787016354	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590787016357	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"64.227.32.213:1080","httpProxy":"64.227.32.213:1080","sslProxy":"64.227.32.213:1080"}
+1590787027901	Marionette	INFO	Stopped listening on port 59580
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590787032330	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileF1nw5g"
+1590787036194	Marionette	INFO	Listening on port 59668
+1590787040919	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileQLqCH4"
+1590787044096	Marionette	INFO	Listening on port 59701
+1590787044538	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590787044541	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"169.57.157.148:8123","httpProxy":"169.57.157.148:8123","sslProxy":"169.57.157.148:8123"}
+1590787045322	Marionette	INFO	Stopped listening on port 59701
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+[2020-05-29T21:17:26Z ERROR xulstore::persist] removeDocument error: unavailable
+1590787049420	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofile3EJvhl"
+1590787054168	Marionette	INFO	Listening on port 59738
+1590787054646	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590787054650	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"64.227.32.213:1080","httpProxy":"64.227.32.213:1080","sslProxy":"64.227.32.213:1080"}
+1590787097033	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileb6FG4W"
+1590787100398	Marionette	INFO	Listening on port 59826
+1590787100653	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590787100656	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"103.7.129.243:80","httpProxy":"103.7.129.243:80","sslProxy":"103.7.129.243:80"}
+JavaScript error: chrome://browser/content/aboutNetError.js, line 326: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+1590787106611	Marionette	INFO	Stopped listening on port 59826
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590787110926	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileQBju2v"
+1590787114591	Marionette	INFO	Listening on port 59881
+1590787115045	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590787115048	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"43.239.152.232:8080","httpProxy":"43.239.152.232:8080","sslProxy":"43.239.152.232:8080"}
+1590787143653	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileujtJz0"
+1590787150623	Marionette	INFO	Listening on port 59926
+1590787150996	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590787150999	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"103.7.129.243:80","httpProxy":"103.7.129.243:80","sslProxy":"103.7.129.243:80"}
+1590787156232	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofilepJ309w"
+1590787159984	Marionette	INFO	Listening on port 59971
+1590787160348	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590787160351	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"103.7.129.243:80","httpProxy":"103.7.129.243:80","sslProxy":"103.7.129.243:80"}
+JavaScript error: chrome://browser/content/aboutNetError.js, line 326: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+1590787164080	Marionette	INFO	Stopped listening on port 59971
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+[2020-05-29T21:19:24Z ERROR xulstore::persist] removeDocument error: unavailable

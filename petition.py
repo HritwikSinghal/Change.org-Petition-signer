@@ -1,9 +1,14 @@
+import json
 import random
 import re
+import traceback
 
 import requests
 from bs4 import BeautifulSoup as beautifulsoup
+
 from selenium import webdriver
+from selenium.webdriver.common.proxy import Proxy
+from selenium.webdriver.common.proxy import ProxyType
 
 
 def print_list(my_list):
@@ -20,7 +25,6 @@ def retrieveNames(url, file_name):
 
     res = requests.get(url, headers=user_agent)
     soup = beautifulsoup(res.content, 'html5lib')
-    names = soup.find_all('div', attrs={"class": "baby-name M14_pink"})
 
     with open(file_name, 'w+', encoding='utf-8') as x:
         for line in list(soup.find_all('h3')):
@@ -31,6 +35,27 @@ def retrieveNames(url, file_name):
             line = line.strip(':')
             line = line.strip(". ")
             x.writelines(str(line) + '\n')
+
+
+def fate_proxy():
+    resp = requests.get('https://raw.githubusercontent.com/fate0/proxylist/master/proxy.list')
+    a = ((resp.text).split('\n'))
+    p_list = []
+    for i in a:
+        try:
+            p_list.append(json.loads(i))
+        except Exception as e:
+            continue
+    np_list = []
+    for i in p_list:
+        if i['country'] == 'IN':
+            np_list.append(i)
+        # np_list.append(i)
+    proxy = []
+    fast_proxy = sorted(np_list, key=lambda k: k['response_time'])
+    for p in fast_proxy:
+        proxy.append(str(p['host']) + ':' + str(p['port']))
+    return proxy
 
 
 def getNames():
@@ -53,16 +78,42 @@ def sign(first_names, last_names):
 
     url = 'https://www.change.org/p/realme-mobiles-release-the-flashtool-for-realme-devices'
 
-    browser = webdriver.Firefox()
-    browser.get(url)
-    for key in data:
-        a = browser.find_element_by_name(key)
-        a.send_keys(data[key])
-    a.submit()
+    proxies = fate_proxy()
+    # random.shuffle(proxies)
 
-    print(fname, lname)
-    # x = input()
-    browser.quit()
+    for proxy in proxies:
+
+        firefox_capabilities = webdriver.DesiredCapabilities.FIREFOX
+        firefox_capabilities['marionette'] = True
+
+        firefox_capabilities['proxy'] = {
+            "proxyType": "MANUAL",
+            "httpProxy": proxy,
+            "ftpProxy": proxy,
+            "sslProxy": proxy
+        }
+        browser = webdriver.Firefox(capabilities=firefox_capabilities)
+
+        try:
+            print('Using Proxy: ', proxy)
+            browser.set_page_load_timeout(30)
+
+            browser.get(url)
+            for key in data:
+                a = browser.find_element_by_name(key)
+                a.send_keys(data[key])
+            a.submit()
+
+            print("filled by: ", fname, lname)
+            print()
+            # x = input()
+            browser.quit()
+
+        except:
+            browser.quit()
+            # traceback.print_exc()
+            print('skipping this proxy')
+            continue
 
 
 def start():
@@ -70,8 +121,11 @@ def start():
     last_names = open('last_name', 'r').readlines()
 
     for x in range(200):
-        sign(first_names, last_names)
-    # sign(first_names, last_names)
+        try:
+            sign(first_names, last_names)
+        except:
+            print("timeout")
+            continue
 
 
 start()
