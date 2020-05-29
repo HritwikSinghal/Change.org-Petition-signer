@@ -15,6 +15,7 @@ def print_list(my_list):
     print('---------------------')
     for x in my_list:
         print(x)
+        # print('"' + x + '"' + ',')
     print('---------------------')
 
 
@@ -47,8 +48,38 @@ def fate_proxy():
         except Exception as e:
             continue
     np_list = []
+
+    countries = ["AE",
+                 "AR",
+                 "AU",
+                 "AZ",
+                 "BD",
+                 "BG",
+                 "BO",
+                 "BR",
+                 "CA",
+                 "CL",
+                 "CN",
+                 "CO",
+                 "CR",
+                 "CZ",
+                 "DE",
+                 "EC",
+                 "FR",
+                 "GB",
+                 "GE",
+                 "GH",
+                 "GN",
+                 "HK",
+                 "ID",
+                 "IL",
+                 "IN",
+                 "IQ",
+                 "JP"
+                 ]
     for i in p_list:
-        if i['country'] == 'IN':
+        if i['country'] in countries:
+            # print(i['country'])
             np_list.append(i)
         # np_list.append(i)
     proxy = []
@@ -77,6 +108,7 @@ def sign(first_names, last_names):
     }
 
     url = 'https://www.change.org/p/realme-mobiles-release-the-flashtool-for-realme-devices'
+    # url = 'https://www.change.org/p/free-nazanin-ratcliffe?source_location=discover_feed'
 
     proxies = fate_proxy()
     # random.shuffle(proxies)
@@ -95,6 +127,7 @@ def sign(first_names, last_names):
         browser = webdriver.Firefox(capabilities=firefox_capabilities)
 
         try:
+            # proxy = '45.236.88.42:8880'
             print('Using Proxy: ', proxy)
             browser.set_page_load_timeout(30)
 
@@ -102,11 +135,17 @@ def sign(first_names, last_names):
             for key in data:
                 a = browser.find_element_by_name(key)
                 a.send_keys(data[key])
-            a.submit()
+
+            try:
+                b = browser.find_element_by_name('marketingCommsConsent.consentGiven')
+                b.click()
+                b.submit()
+            except:
+                a.submit()
 
             print("filled by: ", fname, lname)
             print()
-            # x = input()
+            x = input()
             browser.quit()
 
         except:
