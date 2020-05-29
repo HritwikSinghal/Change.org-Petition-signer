@@ -129,7 +129,7 @@ def sign(first_names, last_names):
         try:
             # proxy = '45.236.88.42:8880'
             print('Using Proxy: ', proxy)
-            browser.set_page_load_timeout(30)
+            browser.set_page_load_timeout(40)
 
             browser.get(url)
             for key in data:
@@ -145,7 +145,7 @@ def sign(first_names, last_names):
 
             print("filled by: ", fname, lname)
             print()
-            x = input()
+            # x = input()
             browser.quit()
 
         except:

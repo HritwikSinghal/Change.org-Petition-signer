@@ -2278,3 +2278,33 @@ JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691:
 1590789767697	Marionette	INFO	Listening on port 64832
 1590789768129	Marionette	WARN	TLS certificate errors will be ignored for this session
 1590789768131	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"45.236.88.42:8880","httpProxy":"45.236.88.42:8880","sslProxy":"45.236.88.42:8880"}
+1590789810530	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofiley482S1"
+1590789814050	Marionette	INFO	Listening on port 64966
+1590789814142	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590789814145	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"195.154.240.249:5836","httpProxy":"195.154.240.249:5836","sslProxy":"195.154.240.249:5836"}
+1590789816925	Marionette	INFO	Stopped listening on port 64966
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+[2020-05-29T22:03:37Z ERROR xulstore::persist] removeDocument error: unavailable
+1590789820946	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileisuI2e"
+1590789824848	Marionette	INFO	Listening on port 65005
+1590789825074	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590789825078	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"185.134.23.198:80","httpProxy":"185.134.23.198:80","sslProxy":"185.134.23.198:80"}
+1590789825544	Marionette	INFO	Stopped listening on port 65005
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: can't access property "provider", this.tablesData[table] is undefined
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 366: Error: Unrecognized UrlbarInput event: unload
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590789829792	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hritwik\\AppData\\Local\\Temp\\rust_mozprofileF645gY"
+1590789833465	Marionette	INFO	Listening on port 65043
+1590789833915	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590789833919	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","ftpProxy":"45.236.88.42:8880","httpProxy":"45.236.88.42:8880","sslProxy":"45.236.88.42:8880"}
