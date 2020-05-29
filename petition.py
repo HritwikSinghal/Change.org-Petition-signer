@@ -1,6 +1,16 @@
-import requests
 import re
+
+import requests
 from bs4 import BeautifulSoup as beautifulsoup
+
+import getProxyList
+
+
+def print_list(my_list):
+    print('---------------------')
+    for x in my_list:
+        print(x)
+    print('---------------------')
 
 
 def retrieveNames(url, file_name):
@@ -32,16 +42,29 @@ def getNames():
 
 
 def sign():
-    def get_names(url, file_name):
-        # url = 'https://www.change.org/p/realme-mobiles-release-the-flashtool-for-realme-devices'
+    url = 'https://www.change.org/p/realme-mobiles-release-the-flashtool-for-realme-devices'
 
-        user_agent = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:75.0) Gecko/20100101 Firefox/75.0'
-        }
+    user_agent = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:75.0) Gecko/20100101 Firefox/75.0'
+    }
+    proxies = getProxyList.fate_proxy()
+    # print_list(proxies)
 
-        res = requests.get(url, headers=user_agent)
-        soup = beautifulsoup(res.text, "html5lib")
-        content = soup.prettify()
+    for proxy in proxies:
+        try:
+            res = requests.get(url, proxies={"http": proxy, "https": proxy}, headers=user_agent)
+            if 'internal error' in res.text:
+                continue
+            break
+        except Exception as e:
+            print("Skipped this proxy")
+
+    soup = beautifulsoup(res.text, "html5lib")
+    content = soup.prettify()
+    print(content)
+
+    with open('a.txt', 'w+', encoding='utf-8') as data:
+        data.write(content)
 
 
 def start():
