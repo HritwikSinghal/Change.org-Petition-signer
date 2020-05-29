@@ -1,6 +1,8 @@
 import re
 
 import requests
+import random
+import mechanize  # sudo pip install python-mechanize
 from bs4 import BeautifulSoup as beautifulsoup
 
 import getProxyList
@@ -42,33 +44,52 @@ def getNames():
 
 
 def sign():
-    url = 'https://www.change.org/p/realme-mobiles-release-the-flashtool-for-realme-devices'
+    first_names = open('first_name', 'r').readlines()
+    last_names = open('last_name', 'r').readlines()
+    fname = random.choice(first_names).strip()
+    lname = random.choice(last_names).strip()
+    email = fname + lname + '@gmail.com'
 
+    url = 'https://www.change.org/p/realme-mobiles-release-the-flashtool-for-realme-devices'
     user_agent = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:75.0) Gecko/20100101 Firefox/75.0'
     }
     proxies = getProxyList.fate_proxy()
-    # print_list(proxies)
+
+    br = mechanize.Browser()
+    br.set_handle_robots(False)  # ignore robots
 
     for proxy in proxies:
         try:
-            res = requests.get(url, proxies={"http": proxy, "https": proxy}, headers=user_agent)
-            if 'internal error' in res.text:
+            # res = requests.post(url, data=data, headers=user_agent, proxies={"http": proxy, "https": proxy})
+            br.set_proxies({"http": proxy, "https": proxy})
+            br.open(url)
+            br.select_form(name="sign-form")
+            br["firstName"] = fname
+            br["lastName"] = lname
+            br["email"] = email
+            res = br.submit()
+
+            if 'internal error' in str(res.read()):
+                print("Internal Error")
                 continue
+
+            print("Done using ", fname, lname)
             break
         except Exception as e:
             print("Skipped this proxy")
 
-    soup = beautifulsoup(res.text, "html5lib")
-    content = soup.prettify()
-    print(content)
-
-    with open('a.txt', 'w+', encoding='utf-8') as data:
-        data.write(content)
+    content = beautifulsoup(res.read(), 'html5lib').prettify()
+    with open("ab.txt", 'w+', encoding='utf-8') as f:
+        f.write(content)
 
 
 def start():
+    # for x in range(200):
+    #     sign()
     sign()
+    # proxies = getProxyList.fate_proxy()
+    # print_list(proxies)
 
 
 start()
