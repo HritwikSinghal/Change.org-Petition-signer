@@ -1,11 +1,9 @@
+import random
 import re
 
 import requests
-import random
-import mechanize  # sudo pip install python-mechanize
 from bs4 import BeautifulSoup as beautifulsoup
-
-import getProxyList
+from selenium import webdriver
 
 
 def print_list(my_list):
@@ -43,53 +41,37 @@ def getNames():
     retrieveNames(first_name_url, 'first_name')
 
 
-def sign():
-    first_names = open('first_name', 'r').readlines()
-    last_names = open('last_name', 'r').readlines()
+def sign(first_names, last_names):
     fname = random.choice(first_names).strip()
     lname = random.choice(last_names).strip()
     email = fname + lname + '@gmail.com'
 
-    url = 'https://www.change.org/p/realme-mobiles-release-the-flashtool-for-realme-devices'
-    user_agent = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:75.0) Gecko/20100101 Firefox/75.0'
+    data = {
+        'firstName': fname,
+        'lastName': lname,
+        'email': email
     }
-    proxies = getProxyList.fate_proxy()
 
-    br = mechanize.Browser()
-    br.set_handle_robots(False)  # ignore robots
+    url = 'https://www.change.org/p/realme-mobiles-release-the-flashtool-for-realme-devices'
+    # url = 'https://www.change.org/p/change-org-developer-remove-google-captcha-from-change-org'
 
-    for proxy in proxies:
-        try:
-            # res = requests.post(url, data=data, headers=user_agent, proxies={"http": proxy, "https": proxy})
-            br.set_proxies({"http": proxy, "https": proxy})
-            br.open(url)
-            br.select_form(name="sign-form")
-            br["firstName"] = fname
-            br["lastName"] = lname
-            br["email"] = email
-            res = br.submit()
+    browser = webdriver.Firefox()
+    browser.get(url)
+    for key in data:
+        a = browser.find_element_by_name(key)
+        a.send_keys(data[key])
+        a.submit()
 
-            if 'internal error' in str(res.read()):
-                print("Internal Error")
-                continue
-
-            print("Done using ", fname, lname)
-            break
-        except Exception as e:
-            print("Skipped this proxy")
-
-    content = beautifulsoup(res.read(), 'html5lib').prettify()
-    with open("ab.txt", 'w+', encoding='utf-8') as f:
-        f.write(content)
+    browser.quit()
 
 
 def start():
-    # for x in range(200):
-    #     sign()
-    sign()
-    # proxies = getProxyList.fate_proxy()
-    # print_list(proxies)
+    first_names = open('first_name', 'r').readlines()
+    last_names = open('last_name', 'r').readlines()
+
+    for x in range(200):
+        sign(first_names, last_names)
+    # sign(first_names, last_names)
 
 
 start()
