@@ -97,7 +97,7 @@ def getNames():
 
 
 def sign(first_names, last_names, proxies, use_proxy):
-    if use_proxy:
+    if use_proxy == 1:
         for proxy in proxies:
             fname = random.choice(first_names).strip()
             lname = random.choice(last_names).strip()
@@ -188,7 +188,6 @@ def sign(first_names, last_names, proxies, use_proxy):
 
         except:
             browser.quit()
-            print('skipping this proxy')
             return
 
 
@@ -196,10 +195,10 @@ def start():
     first_names = open('first_name', 'r').readlines()
     last_names = open('last_name', 'r').readlines()
     proxies = fate_proxy()
-    a = input("Do you want to use proxies?.\n"
+    a = int(input("Do you want to use proxies?.\n"
               "Only use proxies when your normal connection is blocked\n"
               "since proxies are very slow.\n"
-              "1== Yes, 0 == NO")
+              "1== Yes, 0 == NO"))
 
     for x in range(200):
         try:
