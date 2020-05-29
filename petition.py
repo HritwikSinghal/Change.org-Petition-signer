@@ -96,41 +96,81 @@ def getNames():
     retrieveNames(first_name_url, 'first_name')
 
 
-def sign(first_names, last_names):
-    fname = random.choice(first_names).strip()
-    lname = random.choice(last_names).strip()
-    email = fname + lname + str(random.randint(0, 220000)) + '@gmail.com'
+def sign(first_names, last_names, proxies, use_proxy):
+    if use_proxy:
+        for proxy in proxies:
+            fname = random.choice(first_names).strip()
+            lname = random.choice(last_names).strip()
+            email = fname + lname + str(random.randint(0, 220000)) + '@gmail.com'
 
-    data = {
-        'firstName': fname,
-        'lastName': lname,
-        'email': email
-    }
+            data = {
+                'firstName': fname,
+                'lastName': lname,
+                'email': email
+            }
 
-    url = 'https://www.change.org/p/realme-mobiles-release-the-flashtool-for-realme-devices'
-    # url = 'https://www.change.org/p/free-nazanin-ratcliffe?source_location=discover_feed'
+            url = 'https://www.change.org/p/realme-mobiles-release-the-flashtool-for-realme-devices'
+            # url = 'https://www.change.org/p/free-nazanin-ratcliffe?source_location=discover_feed'
 
-    proxies = fate_proxy()
-    # random.shuffle(proxies)
+            # random.shuffle(proxies)
 
-    for proxy in proxies:
+            firefox_capabilities = webdriver.DesiredCapabilities.FIREFOX
+            firefox_capabilities['marionette'] = True
 
-        firefox_capabilities = webdriver.DesiredCapabilities.FIREFOX
-        firefox_capabilities['marionette'] = True
+            firefox_capabilities['proxy'] = {
+                "proxyType": "MANUAL",
+                "httpProxy": proxy,
+                "ftpProxy": proxy,
+                "sslProxy": proxy
+            }
+            browser = webdriver.Firefox(capabilities=firefox_capabilities)
 
-        firefox_capabilities['proxy'] = {
-            "proxyType": "MANUAL",
-            "httpProxy": proxy,
-            "ftpProxy": proxy,
-            "sslProxy": proxy
+            try:
+                # proxy = '45.236.88.42:8880'
+                print('Using Proxy: ', proxy)
+                browser.set_page_load_timeout(40)
+
+                browser.get(url)
+                for key in data:
+                    a = browser.find_element_by_name(key)
+                    a.send_keys(data[key])
+
+                try:
+                    b = browser.find_element_by_name('marketingCommsConsent.consentGiven')
+                    b.click()
+                    b.submit()
+                except:
+                    a.submit()
+
+                print("filled by: ", fname, lname)
+                print()
+                # x = input()
+                browser.quit()
+
+            except:
+                browser.quit()
+                # traceback.print_exc()
+                print('skipping this proxy')
+                continue
+    else:
+        fname = random.choice(first_names).strip()
+        lname = random.choice(last_names).strip()
+        email = fname + lname + str(random.randint(0, 220000)) + '@gmail.com'
+
+        data = {
+            'firstName': fname,
+            'lastName': lname,
+            'email': email
         }
-        browser = webdriver.Firefox(capabilities=firefox_capabilities)
+
+        url = 'https://www.change.org/p/realme-mobiles-release-the-flashtool-for-realme-devices'
+        # url = 'https://www.change.org/p/free-nazanin-ratcliffe?source_location=discover_feed'
+
+        # random.shuffle(proxies)
+        browser = webdriver.Firefox()
 
         try:
-            # proxy = '45.236.88.42:8880'
-            print('Using Proxy: ', proxy)
             browser.set_page_load_timeout(40)
-
             browser.get(url)
             for key in data:
                 a = browser.find_element_by_name(key)
@@ -144,24 +184,26 @@ def sign(first_names, last_names):
                 a.submit()
 
             print("filled by: ", fname, lname)
-            print()
-            # x = input()
             browser.quit()
 
         except:
             browser.quit()
-            # traceback.print_exc()
             print('skipping this proxy')
-            continue
+            return
 
 
 def start():
     first_names = open('first_name', 'r').readlines()
     last_names = open('last_name', 'r').readlines()
+    proxies = fate_proxy()
+    x = input("Do you want to use proxies?.\n"
+              "Only use proxies when your normal connection is blocked\n"
+              "since proxies are very slow.\n"
+              "1== Yes, 0 == NO")
 
     for x in range(200):
         try:
-            sign(first_names, last_names)
+            sign(first_names, last_names, proxies, x)
         except:
             print("timeout")
             continue
