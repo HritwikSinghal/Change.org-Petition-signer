@@ -128,7 +128,7 @@ def sign(first_names, last_names, proxies, use_proxy):
             try:
                 # proxy = '45.236.88.42:8880'
                 print('Using Proxy: ', proxy)
-                browser.set_page_load_timeout(40)
+                browser.set_page_load_timeout(60)
 
                 browser.get(url)
                 for key in data:
