@@ -3,7 +3,7 @@ import re
 from bs4 import BeautifulSoup as beautifulsoup
 
 
-def get_names(url, file_name):
+def retrieveNames(url, file_name):
     # url = 'https://www.change.org/p/realme-mobiles-release-the-flashtool-for-realme-devices'
 
     user_agent = {
@@ -24,6 +24,13 @@ def get_names(url, file_name):
             x.writelines(str(line) + '\n')
 
 
+def getNames():
+    last_name_url = 'https://www.momjunction.com/articles/popular-indian-last-names-for-your-baby_00334734/'
+    first_name_url = 'https://www.momjunction.com/articles/indian-baby-boy-names-with-meanings_00349318/'
+    retrieveNames(last_name_url, 'last_name')
+    retrieveNames(first_name_url, 'first_name')
+
+
 def sign():
     def get_names(url, file_name):
         # url = 'https://www.change.org/p/realme-mobiles-release-the-flashtool-for-realme-devices'
@@ -38,11 +45,7 @@ def sign():
 
 
 def start():
-    last_name_url = 'https://www.momjunction.com/articles/popular-indian-last-names-for-your-baby_00334734/'
-    first_name_url = 'https://www.momjunction.com/articles/indian-baby-boy-names-with-meanings_00349318/'
-
-    get_names(last_name_url, 'last_name')
-    get_names(first_name_url, 'first_name')
+    sign()
 
 
 start()
