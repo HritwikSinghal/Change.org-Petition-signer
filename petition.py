@@ -2,6 +2,7 @@ import json
 import random
 import re
 import traceback
+import time
 
 import requests
 from bs4 import BeautifulSoup as beautifulsoup
@@ -145,6 +146,8 @@ def sign(first_names, last_names, proxies, use_proxy):
                 print("filled by: ", fname, lname)
                 print()
                 # x = input()
+
+                time.sleep(3)
                 browser.quit()
 
             except:
@@ -184,6 +187,7 @@ def sign(first_names, last_names, proxies, use_proxy):
                 a.submit()
 
             print("filled by: ", fname, lname)
+            time.sleep(3)
             browser.quit()
 
         except:
