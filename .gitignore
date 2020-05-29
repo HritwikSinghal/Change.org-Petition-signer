@@ -33,3 +33,4 @@ venv.bak/
 .spyderproject
 .spyproject
 *.log
+geckodriver.log
