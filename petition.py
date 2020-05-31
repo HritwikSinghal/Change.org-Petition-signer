@@ -202,7 +202,7 @@ def start():
     a = int(input("Do you want to use proxies?.\n"
               "Only use proxies when your normal connection is blocked\n"
               "since proxies are very slow.\n"
-              "1== Yes, 0 == NO"))
+              "1== Yes, 0 == NO\n"))
 
     for x in range(200):
         try:
