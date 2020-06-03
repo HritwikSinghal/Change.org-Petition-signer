@@ -97,7 +97,7 @@ def getNames():
     retrieveNames(first_name_url, 'first_name')
 
 
-def sign(first_names, last_names, proxies, use_proxy):
+def sign(first_names, last_names, proxies, use_proxy, url):
     if use_proxy == 1:
         for proxy in proxies:
             fname = random.choice(first_names).strip()
@@ -109,9 +109,6 @@ def sign(first_names, last_names, proxies, use_proxy):
                 'lastName': lname,
                 'email': email
             }
-
-            url = 'https://www.change.org/p/realme-mobiles-release-the-flashtool-for-realme-devices'
-            # url = 'https://www.change.org/p/free-nazanin-ratcliffe?source_location=discover_feed'
 
             # random.shuffle(proxies)
 
@@ -143,7 +140,7 @@ def sign(first_names, last_names, proxies, use_proxy):
                 except:
                     a.submit()
 
-                print("filled by: ", fname, lname)
+                print("Signed by: ", fname, lname)
                 print()
                 # x = input()
 
@@ -166,7 +163,7 @@ def sign(first_names, last_names, proxies, use_proxy):
             'email': email
         }
 
-        url = 'https://www.change.org/p/realme-mobiles-release-the-flashtool-for-realme-devices'
+        
         # url = 'https://www.change.org/p/free-nazanin-ratcliffe?source_location=discover_feed'
 
         # random.shuffle(proxies)
@@ -199,14 +196,18 @@ def start():
     first_names = open('first_name', 'r').readlines()
     last_names = open('last_name', 'r').readlines()
     proxies = fate_proxy()
-    a = int(input("Do you want to use proxies?.\n"
+    
+    up = int(input("Do you want to use proxies?.\n"
               "Only use proxies when your normal connection is blocked\n"
               "since proxies are very slow.\n"
               "1== Yes, 0 == NO\n"))
 
+    # url = 'https://www.change.org/p/realme-mobiles-release-the-flashtool-for-realme-devices'
+    url = input('Enter change.org url to sign')
+    
     for x in range(200):
         try:
-            sign(first_names, last_names, proxies, a)
+            sign(first_names, last_names, proxies, up, url)
         except:
             print("timeout")
             continue
