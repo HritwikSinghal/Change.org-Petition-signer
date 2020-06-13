@@ -35,18 +35,3 @@ Run the app using
 ```sh
 $ python3 petition.py
 ```
-
-Installation:
-
-Clone this repository using
-```sh
-$ git clone https://github.com/HritwikSinghal/Music-library-upgrader
-```
-Enter the directory and install all the requirements using
-```sh
-$ pip3 install -r requirements.txt
-```
-Run the app using
-```sh
-$ python3 Music-library-upgrader.py
-```
