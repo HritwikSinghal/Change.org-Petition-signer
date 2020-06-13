@@ -7,7 +7,6 @@ import traceback
 from faker import Faker
 from selenium import webdriver
 
-
 # def retrieveNames(url, file_name):
 #     user_agent = {
 #         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:75.0) Gecko/20100101 Firefox/75.0'
@@ -32,8 +31,12 @@ from selenium import webdriver
 #     retrieveNames(last_name_url, 'last_name')
 #     retrieveNames(first_name_url, 'first_name')
 
+wait_time = 3
+
 
 def sign(browser):
+    global wait_time
+
     fname = Faker().first_name()
     lname = Faker().last_name()
     randemail = fname + lname + str(random.randint(0, 50000)) + '@gmail.com'
@@ -72,17 +75,20 @@ def sign(browser):
 
     publiccheck.click()
     emailbox.submit()
-    time.sleep(3)
+    time.sleep(wait_time)
 
     if 'Share petition' not in browser.title:
+        # print(browser.title)
         browser.delete_all_cookies()
-        browser.get("https://www.giybf.com")
-        time.sleep(30)
+        wait_time += 1
+        print("New Wait time:", wait_time)
+
+        time.sleep(10)
 
     browser.delete_all_cookies()
 
 
-def start(test=0, pnum=0):
+def start(test=0):
     print("""
       ____  _             ____        _
      / ___|(_) __ _ _ __ | __ )  ___ | |_
@@ -106,11 +112,14 @@ def start(test=0, pnum=0):
             loc = './geckodriver_L64'
         else:
             loc = './geckodriver_L32'
-    if os_name == "Windows":
+    elif os_name == "Windows":
         if os_arch == "64bit":
             loc = './geckodriver_W64'
         else:
             loc = './geckodriver_W32'
+    else:
+        print("OS Not Supported...")
+        exit(0)
 
     # these are the workarounds for not getting flagged as bot
     # UA = "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:77.0) Gecko/20100101 Firefox/77.0"
