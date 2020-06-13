@@ -5,9 +5,7 @@ made this project useless. But Now i have implemented workaround and this is wor
 
 For Windows & Linux Only. Not Compatible with MacOS.
 
-Uses Selenium.It will automatically ask for url and whether to use
-proxies or not. If you chose to sign using proxies, it will auto fetch proxies and sign
-using them.
+Uses Selenium.It will automatically ask for url.
 
 Installation:
 
