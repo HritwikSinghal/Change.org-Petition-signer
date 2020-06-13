@@ -73,6 +73,12 @@ def sign(browser):
     publiccheck.click()
     emailbox.submit()
     time.sleep(3)
+
+    if 'Share petition' not in browser.title:
+        browser.delete_all_cookies()
+        browser.get("https://www.giybf.com")
+        time.sleep(30)
+
     browser.delete_all_cookies()
 
 
@@ -130,9 +136,12 @@ def start(test=0, pnum=0):
             print("Error filling form. Refreshing...")
 
 
-if os.path.isfile('./test_bit'):
-    test = 1
-else:
+try:
+    if os.path.isfile('./test_bit'):
+        test = 1
+    else:
+        test = 0
+except:
     test = 0
 
 try:
