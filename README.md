@@ -1,16 +1,52 @@
 # Sign change.org petitions automatically and using proxies.
+![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) 
+Edit (June 2020) : So apparently Change.org added a Bot prevention script and
+made this project useless. But Now i have implemented workaround and this is working fine. 
+
+For Windows & Linux Only. Not Compatible with MacOS.
+
 Uses Selenium.It will automatically ask for url and whether to use
 proxies or not. If you chose to sign using proxies, it will auto fetch proxies and sign
-using them. A new firefox window will be opened every time to sign. (selenium)
+using them.
 
+Installation:
 
-To run: 
-- download and Install python 3 (https://www.python.org/downloads/) and firefox (https://www.mozilla.org/en-US/firefox/new/)
-- download or clone this repo https://github.com/HritwikSinghal/petition
-- extract it and open terminal in that folder & run below commends
+Download and Install python 3 and Firefox
+```
+    (Windows)
+    Python: https://www.python.org/downloads/ 
+    Firefox: https://www.mozilla.org/en-US/firefox/new/
+
+    (Linux)
+    Python: sudo apt insatll python3
+    Firofox: sudo apt install firefox
 
 ```
+
+Clone this repository using
+```sh
+$ git clone https://github.com/HritwikSinghal/petition
+```
+Enter the directory and install all the requirements using
+```sh
 $ pip3 install -r requirements.txt
+```
+Run the app using
+```sh
 $ python3 petition.py
 ```
-Currently only tested on windows. If on linux or macOS, the only problem would be of firefox driver.
+
+Installation:
+
+Clone this repository using
+```sh
+$ git clone https://github.com/HritwikSinghal/Music-library-upgrader
+```
+Enter the directory and install all the requirements using
+```sh
+$ pip3 install -r requirements.txt
+```
+Run the app using
+```sh
+$ python3 Music-library-upgrader.py
+```
