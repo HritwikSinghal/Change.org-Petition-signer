@@ -34,3 +34,5 @@ venv.bak/
 .spyproject
 *.log
 geckodriver.log
+test_bit
+./test_bit
