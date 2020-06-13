@@ -1,7 +1,7 @@
-# Sign change.org petitions automatically and using proxies.
+# Sign change.org petitions automatically
 ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) 
 Edit (June 2020) : So apparently Change.org added a Bot prevention script and
-made this project useless. But Now i have implemented workaround and this is working fine. 
+made this project useless. But Now i have implemented workaround and this is working fine. Also, proxy support has been removed.
 
 For Windows & Linux Only. Not Compatible with MacOS.
 
