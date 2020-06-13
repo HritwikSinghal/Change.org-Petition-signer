@@ -35,3 +35,5 @@ Run the app using
 ```sh
 $ python3 petition.py
 ```
+
+If the program is exiting just after entering url, try moving the folder to some other location (other drive on PC) and then re-run. This issue occurs mostly on Linux and is caused by missing permission of 'geckodriver_XXX' file. So moving to other drive usually solves the problem. Otherwise try to give proper permissions to 'geckodriver_XXX' (make sure to tick mark 'run as executable').
